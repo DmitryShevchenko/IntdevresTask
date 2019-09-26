@@ -20,8 +20,8 @@ namespace PcDataService
 
         public PcData()
         {
-            // _timer = new Timer(1000 * 60 * 30) {AutoReset = false};
-            _timer = new Timer(1000 * 15) {AutoReset = false};
+            _timer = new Timer(1000 * 60 * 30) {AutoReset = false};
+           // _timer = new Timer(1000 * 15) {AutoReset = false};
             _timer.Elapsed += async (_, __) => await GetDataCycle();
         }
 
